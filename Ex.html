@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Promotions</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-4">
+  <!-- Carousel -->
+  <div id="promoCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+
+      <!-- Banner 1 -->
+      <div class="carousel-item active">
+        <img src="https://via.placeholder.com/800x300?text=Beach+Paradise" class="d-block w-100" alt="Beach">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Relax at Sunny Beaches</h5>
+          <button class="btn btn-primary" data-toggle="modal" data-target="#promoModal1">Book Now</button>
+        </div>
+      </div>
+
+      <!-- Banner 2 -->
+      <div class="carousel-item">
+        <img src="https://via.placeholder.com/800x300?text=Mountain+Adventure" class="d-block w-100" alt="Mountains">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Explore the Mountains</h5>
+          <button class="btn btn-primary" data-toggle="modal" data-target="#promoModal2">Book Now</button>
+        </div>
+      </div>
+
+      <!-- Banner 3 -->
+      <div class="carousel-item">
+        <img src="https://via.placeholder.com/800x300?text=City+Lights" class="d-block w-100" alt="City">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Discover Vibrant Cities</h5>
+          <button class="btn btn-primary" data-toggle="modal" data-target="#promoModal3">Book Now</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Controls -->
+    <a class="carousel-control-prev" href="#promoCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#promoCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+</div>
+
+<!-- Modal 1 -->
+<div class="modal fade" id="promoModal1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Beach Paradise</h5>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        Enjoy crystal-clear waters, golden sands, and unforgettable sunsets. Perfect for a relaxing getaway!
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button class="btn btn-success">Proceed to Booking</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="promoModal2">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Mountain Adventure</h5>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        Trek through scenic trails, breathe fresh mountain air, and experience thrilling adventures.
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button class="btn btn-success">Proceed to Booking</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal fade" id="promoModal3">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">City Lights</h5>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        Dive into bustling nightlife, cultural landmarks, and endless shopping opportunities.
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button class="btn btn-success">Proceed to Booking</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destination</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <style>
+        body{
+            background-color:#f8f9fa;
+        }
+
+        .carousel img{
+            height:500px;
+            object-fit:cover;
+        }
+
+        .carousel-caption{
+            background:rgba(0,0,0,0.5);
+            border-radius:10px;
+            padding:15px;
+        }
+
+        .info{
+            text-align:center;
+            margin:30px;
+            font-size:30px;
+            color:#007bff;
+        }
+
+        .info i{
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-4">
+
+    <h2 class="text-center mb-4">Explore Beautiful Destinations</h2>
+
+    <div id="travelSlider" class="carousel slide" data-ride="carousel">
+
+        <ul class="carousel-indicators">
+            <li data-target="#travelSlider" data-slide-to="0" class="active"></li>
+            <li data-target="#travelSlider" data-slide-to="1"></li>
+            <li data-target="#travelSlider" data-slide-to="2"></li>
+        </ul>
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="https://cdn1.tripoto.com/media/filter/tst/img/2052077/Image/1702907697_sabah_jpg.jpg.webp"
+                     class="d-block w-100">
+
+                <div class="carousel-caption">
+                    <h3>Malaysia</h3>
+                    <p>Malaysia , Truley Asia!.</p>
+
+                    <button class="btn btn-warning"
+                            data-toggle="modal"
+                            data-target="#bookingModal">
+                        Book Now
+                    </button>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://images.pickyourtrail.com/Things_to_Do_in_Singapore_at_Night_0747b47186.png?w=1152&h=440&fit=crop&dpr=1&q=75&auto=format"
+                     class="d-block w-100">
+
+                <div class="carousel-caption">
+                    <h3>Singapore</h3>
+                    <p>Passion made Possible</p>
+
+                    <button class="btn btn-warning"
+                            data-toggle="modal"
+                            data-target="#bookingModal">
+                        Book Now
+                    </button>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://cdn.britannica.com/61/93061-050-99147DCE/Statue-of-Liberty-Island-New-York-Bay.jpg"
+                     class="d-block w-100">
+
+                <div class="carousel-caption">
+                    <h3>NewYork</h3>
+                    <p>The Empire State.</p>
+
+                    <button class="btn btn-warning"
+                            data-toggle="modal"
+                            data-target="#bookingModal">
+                        Book Now
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <a class="carousel-control-prev"
+           href="#travelSlider"
+           data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+
+        <a class="carousel-control-next"
+           href="#travelSlider"
+           data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+
+    </div>
+
+    <div class="info">
+        <i class="fas fa-info-circle"
+           data-toggle="tooltip"
+           data-placement="top"
+           title="Click 'Book Now' to reserve your dream destination.">
+        </i>
+    </div>
+
+</div>
+
+
+<div class="modal fade" id="bookingModal">
+
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+
+        <div class="modal-content">
+
+            <div class="modal-header bg-primary text-white">
+                <h4 class="modal-title">Booking Details</h4>
+
+                <button class="close text-white"
+                        data-dismiss="modal">
+                    &times;
+                </button>
+            </div>
+
+            <div class="modal-body">
+
+                <h5>Travel Package Includes:</h5>
+
+                <ul>
+                    <li>Round-trip Flight</li>
+                    <li>4-Star Hotel Stay</li>
+                    <li>Daily Breakfast</li>
+                    <li>Guided City Tour</li>
+                    <li>Airport Pickup & Drop</li>
+                </ul>
+
+                <p>
+                    Contact our travel experts to customize your trip and
+                    enjoy exclusive discounts.
+                </p>
+
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-secondary"
+                        data-dismiss="modal">
+                    Close
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>
